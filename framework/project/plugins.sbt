@@ -35,6 +35,9 @@ addSbtPlugin("com.lightbend.sbt" % "sbt-javaagent" % Versions.sbtJavaAgent)
 addSbtPlugin("pl.project13.scala" % "sbt-jmh" % Versions.sbtJmh)
 addSbtPlugin("de.heikoseeberger" % "sbt-header" % Versions.sbtHeader)
 
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")
+
+addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.2.6-SNAPSHOT")
 
 libraryDependencies ++= Seq(
   "org.scala-sbt" % "scripted-plugin" % sbtVersion.value,
